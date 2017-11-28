@@ -1,0 +1,11 @@
+"","userID","latitude","longitude","smoker","drink_level","dress_preference","ambience","transport","marital_status","hijos","birth_year","interest","personality","religion","activity","color","weight","budget","height"
+"1","U1001",22.139997,-100.978803,"false","abstemious","informal","family","on foot","single","independent",1989,"variety","thrifty-protector","none","student","black",69,"medium",1.77
+"2","U1002",22.150087,-100.983325,"false","abstemious","informal","family","public","single","independent",1990,"technology","hunter-ostentatious","Catholic","student","red",40,"low",1.87
+"3","U1003",22.119847,-100.946527,"false","social drinker","formal","family","public","single","independent",1989,"none","hard-worker","Catholic","student","blue",60,"low",1.69
+"4","U1004",18.867,-99.183,"false","abstemious","informal","family","public","single","independent",1940,"variety","hard-worker","none","professional","green",44,"medium",1.53
+"5","U1005",22.183477,-100.959891,"false","abstemious","no preference","family","public","single","independent",1992,"none","thrifty-protector","Catholic","student","black",65,"medium",1.69
+"6","U1006",22.15,-100.983,"true","social drinker","no preference","friends","car owner","single","independent",1989,"variety","hard-worker","none","student","blue",75,"medium",1.8
+"7","U1007",22.118464,-100.938256,"false","casual drinker","informal","solitary","public","single","independent",1989,"variety","thrifty-protector","Catholic","student","purple",60,"low",1.59
+"8","U1008",22.122989,-100.923811,"false","social drinker","formal","solitary","public","single","independent",1989,"technology","hard-worker","Catholic","student","green",68,"low",1.72
+"9","U1009",22.159427,-100.990448,"false","abstemious","formal","family","on foot","single","kids",1991,"variety","thrifty-protector","Catholic","student","green",75,"medium",1.78
+"10","U1010",22.190889,-100.998669,"false","social drinker","no preference","friends","car owner","married","kids",1987,"technology","hard-worker","none","student","green",40,"medium",1.67
