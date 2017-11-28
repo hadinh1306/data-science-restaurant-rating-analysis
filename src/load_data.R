@@ -14,13 +14,13 @@ output_file <- args[2]
 
 main <- function(){
   # read in data
-  data <- read.csv(input_file)
+  data <- read.csv(file = input_file)
   
   # subset first 10 rows of data
   data_subset <- head(data, 10)
   
   # save this subset to other folder
-  write.csv(data_subset, "output_file")
+  write.csv(data_subset, file = output_file)
 }
 
 # call main function
