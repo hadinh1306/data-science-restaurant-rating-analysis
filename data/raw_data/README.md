@@ -15,7 +15,7 @@ National Center for Research and Technological Development CENIDET, México
 3. Past Usage:
     (a) Blanca Vargas-Govea, Juan Gabriel González-Serna, Rafael Ponce-Medellín. Effects of relevant contextual features in the performance of a restaurant recommender system. In RecSys’11: Workshop on Context Aware Recommender Systems (CARS-2011), Chicago, IL, USA, October 23, 2011.
     (b) The task was to generate a top-n list of restaurants according to the consumer preferences. Finding the significant features was another addressed problem.
-    
+
 4. Relevant Information.
 Two approaches were tested: a collaborative filter technique and a contextual approach.
    (i) The collaborative filter technique used only one file i.e., rating_final.csv that comprises the user, item and rating attributes.

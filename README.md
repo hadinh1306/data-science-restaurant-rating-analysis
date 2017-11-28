@@ -1,7 +1,12 @@
 # [Data Science Project] Does difference in Consumer Budget and Restaurant Price Affect Consumer Overall Rating?
 
 ## Dataset
-Since I'm very interested in cuisine and consumer analysis, I chose *[Restaurant Data with Consumer Ratings](https://www.kaggle.com/uciml/restaurant-data-with-consumer-ratings)* from Kaggle to be my dataset.
+Since I'm very interested in cuisine and consumer analysis, I chose *[Restaurant Data with Consumer Ratings](https://www.kaggle.com/uciml/restaurant-data-with-consumer-ratings)* from Kaggle to be my data source.
+
+In this analysis, I use 3 most relevant data files from the 9 datasets provided:
+1. geoplaces2.csv
+2. rating_final.csv
+3. userprofile.csv
 
 ## Question that interests me
 With this dataset, I want to know whether the difference or similarity between consumer budget and restaurant price affect consumer's overall rating.
