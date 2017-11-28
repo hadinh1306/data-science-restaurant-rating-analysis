@@ -20,7 +20,7 @@ main <- function(){
   data_subset <- head(data, 10)
   
   # save this subset to other folder
-  write.csv(data_subset, file = output_file)
+  write.csv(data_subset, file = output_file, row.names = FALSE)
 }
 
 # call main function
