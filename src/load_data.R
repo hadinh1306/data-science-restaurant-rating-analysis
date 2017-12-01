@@ -1,5 +1,5 @@
 #! /usr/bin/env Rscript
-# download_data.R
+# load_data.R
 # Ha Dinh, November 2017
 #
 # This script load a dataset in .csv files to R and output its first 10 rows in .csv file. 
