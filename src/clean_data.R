@@ -2,7 +2,7 @@
 # clean_data.R
 # Ha Dinh, December 2017
 #
-# This script cleans all datasets and combine them to one final dataset for analysis. 
+# This script cleans all datasets and combine them to a final dataset for analysis. 
 # 
 # Usage: Rscript clean_data.R restaurant_data consumer_data rating_data output_file
 #
