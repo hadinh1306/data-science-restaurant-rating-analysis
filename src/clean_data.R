@@ -7,9 +7,9 @@
 # Usage: Rscript clean_data.R restaurant_data consumer_data rating_data output_file
 #
 # Arguments: 
-# file_1: path and file name for dataset that contains restaurant information
-# file_2: path and file name for dataset that contains consumer information
-# file_3: path and file name for dataset that contains rating information
+# restaurant_data: path and file name for dataset that contains restaurant information
+# consumer_data: path and file name for dataset that contains consumer information
+# rating_data: path and file name for dataset that contains rating information
 # output_file: path to and name of output file
 #
 # Example: 
