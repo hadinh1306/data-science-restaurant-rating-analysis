@@ -4,27 +4,31 @@
 #
 # This script cleans all datasets and combine them to one final dataset for analysis. 
 # 
-# Usage: Rscript clean_data.R file_1 file_2 file_3 output_file
+# Usage: Rscript clean_data.R restaurant_data consumer_data rating_data output_file
 #
 # Arguments: 
-# file_1, file_2, file_3: path to and name of raw datasets that you want to clean and combine
+# file_1: path and file name for dataset that contains restaurant information
+# file_2: path and file name for dataset that contains consumer information
+# file_3: path and file name for dataset that contains rating information
 # output_file: path to and name of output file
 #
 # Example: 
-# 
+# Rscript clean_data.R "../data/raw_data/restaurant.csv" "../data/raw_data/consumer.csv" "../data/raw_data/rating.csv" "../data/data_for_analysis/final.csv"
+
 
 library(tidyverse)
 library(forcats)
 
-
 # read in command line argument
 args <- commandArgs(trailingOnly = TRUE)
-link_to_download <- args[1]
-output_file <- args[2]
+restaurant_data <- args[1]
+file_2 <- args[2]
+file_3 <- args[3]
+output_file <- args[4]
 
 
 # load data
-restaurant <- read.csv("../data/raw_data/geoplaces2.csv")
+restaurant <- read.csv(file_1)
 consumer <- read.csv("../data/raw_data/userprofile.csv")
 rating <- read.csv("../data/raw_data/rating_final.csv")
 
@@ -72,5 +76,5 @@ final_df <- join_df %>%
 
 
 # output cleaned dataframe
-write.csv(final_df, file = output_file)
+write.csv(final_df, file = output_file, row.names = FALSE)
 
