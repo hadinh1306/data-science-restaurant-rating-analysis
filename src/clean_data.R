@@ -45,28 +45,11 @@ main <- function(){
   
   # filter NA values 
   join_df <- join_df %>% 
-    filter(budget != "?")
-  
-  # transform factor levels (low, medium, high) to number (1, 2, 3) for easy comparison
-  join_df$budget <- fct_recode(join_df$budget, "1" = "low", "2" = "medium", "3" = "high")
-  join_df$budget <- fct_drop(join_df$budget)
-  levels(join_df$budget)
-  join_df$budget <- as.numeric(as.character(join_df$budget))
-  
-  join_df$price <- fct_recode(join_df$price, "1" = "low", "2" = "medium", "3" = "high")
-  levels(join_df$price)
-  join_df$price <- as.numeric(as.character(join_df$price))
-  
-  
-  # categorize different budget-price groups
-  final_df <- join_df %>% 
-    mutate(case = case_when(budget == price ~ "equal",
-                                      budget < price ~ "lower",
-                                      budget > price ~ "higher")) %>% 
-    select(budget, price, rating, case)
+    filter(budget != "?") %>% 
+    select(placeID, userID, budget, price, rating)
   
   # output cleaned dataframe
-  write.csv(final_df, file = output_file, row.names = FALSE)
+  write.csv(join_df, file = output_file, row.names = FALSE)
 }
 
 # call main function
