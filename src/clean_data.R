@@ -60,10 +60,10 @@ main <- function(){
   
   # categorize different budget-price groups
   final_df <- join_df %>% 
-    mutate(analysis_group = case_when(budget == price ~ "equal",
+    mutate(case = case_when(budget == price ~ "equal",
                                       budget < price ~ "lower",
                                       budget > price ~ "higher")) %>% 
-    select(budget, price, rating, analysis_group)
+    select(budget, price, rating, case)
   
   # output cleaned dataframe
   write.csv(final_df, file = output_file, row.names = FALSE)

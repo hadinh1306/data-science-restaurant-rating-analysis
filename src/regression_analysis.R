@@ -1,17 +1,17 @@
 #! /usr/bin/env Rscript
-# analysis.R
+# regression_analysis.R
 # Ha Dinh, December 2017
 #
 # This script analyzes data and output a table analysis results. 
 # 
-# Usage: Rscript analysis.R input_file output_file
+# Usage: Rscript regression_analysis.R input_file output_file
 #
 # Arguments: 
 # input_file: path and file name for dataset you want to analyze
 # output_file: path to and name of output file that contains analysis results. 
 #
 # Example: 
-# Rscript analysis.R "../data/data_for_analysis/budget_price_rating.csv" "../reports/regression_analysis.csv"
+# Rscript regression_analysis.R "../data/data_for_analysis/budget_price_rating.csv" "../reports/regression_analysis.csv"
 
 # read in command line argument
 args <- commandArgs(trailingOnly = TRUE)
@@ -51,14 +51,3 @@ main <- function(){
 
 # call main function
 main()
-
-
-
-
-
-
-
-
-
-
-
