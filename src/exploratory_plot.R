@@ -7,7 +7,7 @@
 # Usage: Rscript exploratary_plot.R input_file output_image
 #
 # Arguments: 
-# input_file: path and file name for dataset you want to do draw an interative plot
+# input_file: path and file name for dataset you want to do draw an interactive plot
 # output_image: path to and name of output image. Choose extension of image to be either .png or .jpg
 #
 # Example: 
