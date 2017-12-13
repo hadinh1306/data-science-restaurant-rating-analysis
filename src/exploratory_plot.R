@@ -11,7 +11,7 @@
 # output_image: path to and name of output image. Choose extension of image to be either .png or .jpg
 #
 # Example: 
-# Rscript exploratary_plot.R "../data/data_for_analysis/budget_price_rating.csv" "../reports/exploratory_plot.jpg"
+# Rscript exploratary_plot.R "../data/data_for_analysis/budget_price_rating.csv" "../results/exploratory_plot.jpg"
 
 # read in command line argument
 args <- commandArgs(trailingOnly = TRUE)
