@@ -58,4 +58,4 @@ clean:
 	rm -f data/data_for_analysis/budget_price_rating.csv
 	rm -f results/exploratory_plot.jpg
 	rm -f reports/regression_analysis.csv
-	rm -f reports/report.md
+	rm -f reports/report.md reports/report.html
