@@ -13,15 +13,15 @@ all: reports/report.md
 
 # download raw data
 ## download restaurant data
-data/raw_data/geoplaces2.csv: src/download_data.R https://github.com/hadinh1306/data-science-restaurant-rating-analysis/raw/master/data/raw_data/geoplaces2.csv
+data/raw_data/geoplaces2.csv: src/download_data.R
 	Rscript src/download_data.R https://github.com/hadinh1306/data-science-restaurant-rating-analysis/raw/master/data/raw_data/geoplaces2.csv data/raw_data/geoplaces2.csv
 
 ## download consumer data
-data/raw_data/userprofile.csv: src/download_data.R https://github.com/hadinh1306/data-science-restaurant-rating-analysis/raw/master/data/raw_data/userprofile.csv
+data/raw_data/userprofile.csv: src/download_data.R
 	Rscript src/download_data.R https://github.com/hadinh1306/data-science-restaurant-rating-analysis/raw/master/data/raw_data/userprofile.csv data/raw_data/userprofile.csv
 	
 ## download rating data
-data/raw_data/rating_final.csv: src/download_data.R https://github.com/hadinh1306/data-science-restaurant-rating-analysis/raw/master/data/raw_data/rating_final.csv
+data/raw_data/rating_final.csv: src/download_data.R
 	Rscript src/download_data.R https://github.com/hadinh1306/data-science-restaurant-rating-analysis/raw/master/data/raw_data/rating_final.csv data/raw_data/rating_final.csv
 
 # clean up data and combine all raw data to a single table
@@ -37,14 +37,14 @@ results/exploratory_plot.jpg: src/exploratory_plot.R data/data_for_analysis/budg
 	Rscript src/exploratory_plot.R data/data_for_analysis/budget_price_rating.csv results/exploratory_plot.jpg
 
 # regression analysis
-results/regression_analysis.csv: src/exploratory_plot.R data/data_for_analysis/budget_price_rating.csv
-	Rscript src/regression_analysis.R data/data_for_analysis/budget_price_rating.csv reports/regression_analysis.csv
+results/regression_analysis.csv: src/regression_analysis.R data/data_for_analysis/budget_price_rating.csv
+	Rscript src/regression_analysis.R data/data_for_analysis/budget_price_rating.csv results/regression_analysis.csv
 	
 ###############################
 #------------Report-----------#
 ###############################
 
-reports/report.md: src/report.Rmd results/exploratory_plot.jpg
+reports/report.md: src/report.Rmd results/exploratory_plot.jpg results/regression_analysis.csv
 	Rscript -e 'ezknitr::ezknit(\"src/report.Rmd\", out_dir = \"reports\")'
 
 
@@ -52,10 +52,11 @@ reports/report.md: src/report.Rmd results/exploratory_plot.jpg
 #------------Clean------------#
 ###############################
 clean: 
-	rm -f data/raw_data/geoplaces2.csv
-	rm -f data/raw_data/userprofile.csv
+	rm -f data/raw_data/geoplaces2.csv 
+	rm -f data/raw_data/userprofile.csv 
 	rm -f data/raw_data/rating_final.csv
 	rm -f data/data_for_analysis/budget_price_rating.csv
 	rm -f results/exploratory_plot.jpg
-	rm -f reports/regression_analysis.csv
-	rm -f reports/report.md reports/report.html
+	rm -f results/regression_analysis.csv
+	rm -f reports/report.md 
+	rm -f reports/report.html

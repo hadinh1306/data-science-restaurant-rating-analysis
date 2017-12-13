@@ -53,16 +53,20 @@ Code reference: [exploratory_plot.R](../src/exploratory_plot.R)
 
 
 ```r
-read.csv("../results/regression_analysis.csv")
+read.csv("results/regression_analysis.csv")
 ```
 
 ```
-## Warning in file(file, "rt"): cannot open file '../results/
-## regression_analysis.csv': No such file or directory
-```
-
-```
-## Error in file(file, "rt"): cannot open the connection
+##                       term    estimate std.error  statistic     p.value
+## 1              (Intercept)  1.22222222 0.2550135  4.7927749 0.000001874
+## 2                budgetlow -0.15555556 0.2734715 -0.5688182 0.569597479
+## 3             budgetmedium  0.08241354 0.2625032  0.3139525 0.753617602
+## 4                 pricelow  0.23931624 0.3317438  0.7213887 0.470826077
+## 5              pricemedium  0.37777778 0.3070769  1.2302383 0.218875018
+## 6       budgetlow:pricelow -0.17832333 0.3550143 -0.5022989 0.615559362
+## 7    budgetmedium:pricelow -0.50447832 0.3413167 -1.4780360 0.139688902
+## 8    budgetlow:pricemedium -0.27777778 0.3281218 -0.8465692 0.397422299
+## 9 budgetmedium:pricemedium -0.40635720 0.3159446 -1.2861660 0.198660033
 ```
 
 Code reference: [regression_analysis.R](../src/regression_analysis.R) 

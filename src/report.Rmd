@@ -54,7 +54,7 @@ Code reference: [exploratory_plot.R](../src/exploratory_plot.R)
 ### Results
 
 ```{r}
-read.csv("../results/regression_analysis.csv")
+read.csv("results/regression_analysis.csv")
 ```
 
 Code reference: [regression_analysis.R](../src/regression_analysis.R) 
