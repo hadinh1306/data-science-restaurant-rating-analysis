@@ -53,4 +53,9 @@ reports/report.md: src/report.Rmd results/exploratory_plot.jpg
 ###############################
 clean: 
 	rm -f data/raw_data/geoplaces2.csv
-	rm -f 
+	rm -f data/raw_data/userprofile.csv
+	rm -f data/raw_data/rating_final.csv
+	rm -f data/data_for_analysis/budget_price_rating.csv
+	rm -f results/exploratory_plot.jpg
+	rm -f reports/regression_analysis.csv
+	rm -f reports/report.md
