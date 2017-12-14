@@ -6,3 +6,6 @@ FROM rocker/tidyverse
 
 # install ezknitr packages
 RUN Rscript -e "intall.packages('ezknitr', repos = 'http://cran.us.r-project.org')"
+
+# install required packages for analysis pipeline
+RUN apt-get update && apt-get install -y \
