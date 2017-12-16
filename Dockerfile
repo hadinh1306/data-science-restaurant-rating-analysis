@@ -1,5 +1,7 @@
 # Docker file for data-science-restaurant-rating-analysis
 # Ha Dinh, Dec 2017
+# usage:  docker run -it --rm -v YOUR_LOCAL_DIRECTORY_OF_CLONED_REPO/:/home/data-science-restaurant-rating-analysis dinhhn/data-science-restaurant-rating-analysis /bin/bash
+
 
 # use rocker/tidyverse as the base image
 FROM rocker/tidyverse
